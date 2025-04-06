@@ -1,0 +1,35 @@
+__pycache__/
+# *.py[cod]
+# *$py.class
+
+results/
+
+.env
+.venv
+venv/
+ENV/
+env/
+venv.bak/
+
+*.log
+*.cache
+*.pid
+*.gz
+*.tmp
+
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+.vscode/
+.idea/
+*.iml
+
+*.pth
+*.pt
+*.onnx
+*.npz
+data/
+checkpoints/
