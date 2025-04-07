@@ -68,16 +68,16 @@ def main():
     C_rec = 3    # recommendation list size per BS
     episodes = 1000
     steps_per_episode = 50
-    gamma = 0.98
-    lr = 5e-4
+    gamma = 0.95
+    lr = 1e-3
     batch_size = 64
     memory_capacity = 10000
-    target_update_freq = 200
+    target_update_freq = 100
     seed = 42
 
     # Initialize environment and agent
     env = Environment(M=M, N=N, F=F, K=K, C_cache=C_cache, C_rec=C_rec, seed=seed)
-    agent = DDQNAgent(env, hidden_dim=256, batch_size=batch_size, lr=lr, gamma=gamma,
+    agent = DDQNAgent(env, hidden_dim=128, batch_size=batch_size, lr=lr, gamma=gamma,
                       target_update_freq=target_update_freq, memory_capacity=memory_capacity)
 
     # Logging

@@ -16,6 +16,7 @@ venv.bak/
 *.pid
 *.gz
 *.tmp
+*.png
 
 build/
 dist/
