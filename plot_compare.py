@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 def main():
-    # 你要对比的多种模式
+    # 要对比的多种模式
     modes = [
         "full",
         "random_all",
@@ -12,7 +12,7 @@ def main():
         "random_ua"
     ]
 
-    # 针对每种模式，尝试加载对应的 metrics 文件
+    # 尝试加载对应的 metrics 文件
     metrics_dict = {}
     for mode in modes:
         filename = f"training_metrics_{mode}.npz"
@@ -36,10 +36,13 @@ def main():
         return
 
     # 统一 episodes 数量（假设每种模式都跑了相同 episodes）
-    # 如果有差异，可能需要额外处理
-    any_mode = next(iter(metrics_dict))
+    any_mode = next(iter(metrics_dict))  # 获取一个可用的 mode
     max_len = len(metrics_dict[any_mode]["reward"])
     episodes = np.arange(1, max_len + 1)
+
+    # 创建存放图片的文件夹
+    output_dir = "comparison_plots"
+    os.makedirs(output_dir, exist_ok=True)
 
     # 1) Plot average reward
     plt.figure(figsize=(8,6))
@@ -48,7 +51,7 @@ def main():
     plt.title("Training Reward per Episode (Comparison)")
     plt.xlabel("Episode"); plt.ylabel("Average Reward")
     plt.grid(True); plt.legend()
-    plt.savefig("reward_compare.png")
+    plt.savefig(os.path.join(output_dir, "reward_compare.png"))
     plt.close()
 
     # 2) Plot energy consumption
@@ -58,7 +61,7 @@ def main():
     plt.title("Average Energy Consumption per Episode (Comparison)")
     plt.xlabel("Episode"); plt.ylabel("Energy Consumption")
     plt.grid(True); plt.legend()
-    plt.savefig("energy_compare.png")
+    plt.savefig(os.path.join(output_dir, "energy_compare.png"))
     plt.close()
 
     # 3) Plot preference deviation
@@ -69,7 +72,7 @@ def main():
     plt.title("Preference Deviation per Episode (Comparison)")
     plt.xlabel("Episode"); plt.ylabel("Preference Deviation D")
     plt.grid(True); plt.legend()
-    plt.savefig("preference_deviation_compare.png")
+    plt.savefig(os.path.join(output_dir, "preference_deviation_compare.png"))
     plt.close()
 
     # 4) Plot cache hit rate
@@ -80,10 +83,10 @@ def main():
     plt.xlabel("Episode"); plt.ylabel("Cache Hit Rate")
     plt.ylim(0, 1)
     plt.grid(True); plt.legend()
-    plt.savefig("cache_hit_rate_compare.png")
+    plt.savefig(os.path.join(output_dir, "cache_hit_rate_compare.png"))
     plt.close()
 
-    print("Comparison plots saved:")
+    print(f"Comparison plots saved into '{output_dir}' folder:")
     print("  - reward_compare.png")
     print("  - energy_compare.png")
     print("  - preference_deviation_compare.png")
