@@ -1,6 +1,9 @@
 import torch
 import numpy as np
 import argparse
+import os
+import json
+from datetime import datetime
 from ddqn import DDQNAgent
 from advanced_env import AdvancedEnvironment
 
@@ -54,26 +57,70 @@ def random_association(env):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=str, default="config.json", help="Path to configuration file")
     parser.add_argument("--mode", type=str, default="full", 
                         choices=["full","random_all","random_ua","random_rec","random_ca"],
                         help="Choose the control mode for partial or full random actions")
     args = parser.parse_args()
 
+    # 读取配置文件
+    try:
+        with open(args.config, 'r') as f:
+            config = json.load(f)
+    except FileNotFoundError:
+        print(f"配置文件 {args.config} 不存在，将创建默认配置文件")
+        config = {
+            "M": 2,               # 基站数
+            "N": 4,               # 用户数
+            "F": 6,               # 视频数
+            "K": 2,               # 每视频层数
+            "C_cache": 4,         # 缓存容量(层数)
+            "C_rec": 3,           # 推荐容量
+            "episodes": 3000,     # 训练回合数
+            "steps_per_episode": 50,
+            "gamma": 0.95,
+            "lr": 1e-3,
+            "batch_size": 64,
+            "memory_capacity": 10000,
+            "target_update_freq": 100,
+            "seed": 42,
+            "env_params": {
+                "D_max": 0.2,
+                "phi": 100,
+                "B": 10.0, 
+                "BH_B": 5.0,
+                "P_m": 1.0, 
+                "w_BH": 0.5
+            }
+        }
+        # 保存默认配置文件
+        os.makedirs(os.path.dirname(args.config) or '.', exist_ok=True)
+        with open(args.config, 'w') as f:
+            json.dump(config, f, indent=4)
+        print(f"已创建默认配置文件: {args.config}")
+
+    # 获取命令行指定的mode
+    mode = args.mode
+    print(f"使用命令行指定的mode: {mode}")
+
     # Configuration
-    M = 2        # 基站数
-    N = 4        # 用户数
-    F = 6        # 视频数
-    K = 2        # 每视频层数
-    C_cache = 4  # 缓存容量(层数)
-    C_rec = 3    # 推荐容量
-    episodes = 3000
-    steps_per_episode = 50
-    gamma = 0.95
-    lr = 1e-3
-    batch_size = 64
-    memory_capacity = 10000
-    target_update_freq = 100
-    seed = 42
+    M = config["M"]           # 基站数
+    N = config["N"]           # 用户数
+    F = config["F"]           # 视频数
+    K = config["K"]           # 每视频层数
+    C_cache = config["C_cache"]  # 缓存容量(层数)
+    C_rec = config["C_rec"]   # 推荐容量
+    episodes = config["episodes"]
+    steps_per_episode = config["steps_per_episode"]
+    gamma = config["gamma"]
+    lr = config["lr"]
+    batch_size = config["batch_size"]
+    memory_capacity = config["memory_capacity"]
+    target_update_freq = config["target_update_freq"]
+    seed = config["seed"]
+
+    # 获取环境参数
+    env_params = config["env_params"]
 
     # ==================
     # 创建环境 & DDQN智能体
@@ -81,9 +128,9 @@ def main():
     env = AdvancedEnvironment(
         M=M, N=N, F=F, K=K, 
         C_cache=C_cache, C_rec=C_rec, 
-        D_max=0.2, phi=100,
-        B=10.0, BH_B=5.0,
-        P_m=1.0, w_BH=0.5,
+        D_max=env_params["D_max"], phi=env_params["phi"],
+        B=env_params["B"], BH_B=env_params["BH_B"],
+        P_m=env_params["P_m"], w_BH=env_params["w_BH"],
         seed=seed
     )
     agent = DDQNAgent(env, hidden_dim=128, batch_size=batch_size, lr=lr, gamma=gamma,
@@ -96,7 +143,8 @@ def main():
     hitrate_history = []
     eff_history = []  # 新增: 能量效率
 
-    print(f"=== Training Mode: {args.mode} ===")
+    print(f"=== Training Mode: {mode} ===")
+    print(f"Parameters: M={M}, N={N}, F={F}, K={K}, C_cache={C_cache}, C_rec={C_rec}, lr={lr}")
 
     # ==================
     # 训练循环
@@ -107,7 +155,7 @@ def main():
 
         for t in range(1, steps_per_episode+1):
             # 1) 根据 mode 选择动作
-            if args.mode == "full":
+            if mode == "full":
                 # 全部由DDQN做决策
                 X, Y, Z, action_mask = agent.select_action(state)
             else:
@@ -115,19 +163,19 @@ def main():
                 X_ddqn, Y_ddqn, Z_ddqn, action_mask_ddqn = agent.select_action(state)
 
                 # 部分改为随机策略
-                if args.mode == "random_all":
+                if mode == "random_all":
                     X = random_caching(env)
                     Y = random_recommendation(env)
                     Z = random_association(env)
-                elif args.mode == "random_ua":
+                elif mode == "random_ua":
                     X = X_ddqn
                     Y = Y_ddqn
                     Z = random_association(env)
-                elif args.mode == "random_rec":
+                elif mode == "random_rec":
                     X = X_ddqn
                     Y = random_recommendation(env)
                     Z = Z_ddqn
-                elif args.mode == "random_ca":
+                elif mode == "random_ca":
                     X = random_caching(env)
                     Y = Y_ddqn
                     Z = Z_ddqn
@@ -184,18 +232,42 @@ def main():
                   f"energy_eff={avg_eff:.3f}, epsilon={agent.epsilon:.2f}")
 
     # ==================
-    # 训练完成，保存结果
+    # 训练完成，创建保存目录并保存结果
     # ==================
-    save_name = f"ddqn_model_{args.mode}.pth"
-    torch.save(agent.q_network.state_dict(), save_name)
-    np.savez(f"training_metrics_{args.mode}.npz",
+    # 创建保存目录
+    save_dir = "models"
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+    
+    # 生成模型文件名，包含所有关键参数
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    config_name = os.path.splitext(os.path.basename(args.config))[0]
+    model_name = f"ddqn_{config_name}_M{M}_N{N}_F{F}_K{K}_Cc{C_cache}_Cr{C_rec}_lr{lr}_mode{mode}_{timestamp}"
+    
+    # 保存模型和训练指标
+    model_path = os.path.join(save_dir, f"{model_name}.pth")
+    metrics_path = os.path.join(save_dir, f"{model_name}_metrics.npz")
+    
+    torch.save({
+        'model_state_dict': agent.q_network.state_dict(),
+        'target_state_dict': agent.target_network.state_dict(),
+        'optimizer_state_dict': agent.optimizer.state_dict(),
+        'epsilon': agent.epsilon,
+        'config': config,
+        'config_file': args.config,
+        'mode': mode  # 添加命令行指定的mode
+    }, model_path)
+    
+    np.savez(metrics_path,
              reward=np.array(reward_history, dtype=np.float32),
              energy=np.array(energy_history, dtype=np.float32),
              D=np.array(D_history, dtype=np.float32),
              hit_rate=np.array(hitrate_history, dtype=np.float32),
              energy_eff=np.array(eff_history, dtype=np.float32))
-    print(f"Training completed under mode='{args.mode}'.")
-    print(f"Model saved to {save_name} and metrics to training_metrics_{args.mode}.npz")
+    
+    print(f"Training completed under mode='{mode}'.")
+    print(f"Model saved to {model_path}")
+    print(f"Metrics saved to {metrics_path}")
 
 
 if __name__ == "__main__":
