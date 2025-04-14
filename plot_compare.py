@@ -40,6 +40,11 @@ def main():
     max_len = len(metrics_dict[any_mode]["reward"])
     episodes = np.arange(1, max_len + 1)
 
+    # 计算能源效率 (energy efficiency)
+    for mode, mdata in metrics_dict.items():
+        # 能源效率定义为缓存命中率与能耗的比值
+        mdata["energy_eff"] = mdata["hitrate"] / (mdata["energy"] + 1e-10)  # 添加小值避免除零
+
     # 创建存放图片的文件夹
     output_dir = "comparison_plots"
     os.makedirs(output_dir, exist_ok=True)
@@ -47,8 +52,8 @@ def main():
     # 1) Plot average reward
     plt.figure(figsize=(8,6))
     for mode, mdata in metrics_dict.items():
-        plt.plot(episodes, mdata["reward"], label=f"{mode}")
-    plt.title("Training Reward per Episode (Comparison)")
+        plt.plot(episodes, mdata["reward"][:max_len], label=f"{mode}")
+    plt.title("Training Reward per Episode")
     plt.xlabel("Episode"); plt.ylabel("Average Reward")
     plt.grid(True); plt.legend()
     plt.savefig(os.path.join(output_dir, "reward_compare.png"))
@@ -57,8 +62,8 @@ def main():
     # 2) Plot energy consumption
     plt.figure(figsize=(8,6))
     for mode, mdata in metrics_dict.items():
-        plt.plot(episodes, mdata["energy"], label=f"{mode}")
-    plt.title("Average Energy Consumption per Episode (Comparison)")
+        plt.plot(episodes, mdata["energy"][:max_len], label=f"{mode}")
+    plt.title("Average Energy Consumption per Episode")
     plt.xlabel("Episode"); plt.ylabel("Energy Consumption")
     plt.grid(True); plt.legend()
     plt.savefig(os.path.join(output_dir, "energy_compare.png"))
@@ -67,9 +72,9 @@ def main():
     # 3) Plot preference deviation
     plt.figure(figsize=(8,6))
     for mode, mdata in metrics_dict.items():
-        plt.plot(episodes, mdata["D"], label=f"{mode}")
+        plt.plot(episodes, mdata["D"][:max_len], label=f"{mode}")
     plt.axhline(y=0.2, color='red', linestyle='--', label="D_max=0.2")
-    plt.title("Preference Deviation per Episode (Comparison)")
+    plt.title("Preference Deviation per Episode")
     plt.xlabel("Episode"); plt.ylabel("Preference Deviation D")
     plt.grid(True); plt.legend()
     plt.savefig(os.path.join(output_dir, "preference_deviation_compare.png"))
@@ -78,12 +83,22 @@ def main():
     # 4) Plot cache hit rate
     plt.figure(figsize=(8,6))
     for mode, mdata in metrics_dict.items():
-        plt.plot(episodes, mdata["hitrate"], label=f"{mode}")
-    plt.title("Cache Hit Rate per Episode (Comparison)")
+        plt.plot(episodes, mdata["hitrate"][:max_len], label=f"{mode}")
+    plt.title("Cache Hit Rate per Episode")
     plt.xlabel("Episode"); plt.ylabel("Cache Hit Rate")
     plt.ylim(0, 1)
     plt.grid(True); plt.legend()
     plt.savefig(os.path.join(output_dir, "cache_hit_rate_compare.png"))
+    plt.close()
+
+    # 5) Plot energy efficiency
+    plt.figure(figsize=(8,6))
+    for mode, mdata in metrics_dict.items():
+        plt.plot(episodes, mdata["energy_eff"][:max_len], label=f"{mode}")
+    plt.title("Energy Efficiency per Episode")
+    plt.xlabel("Episode"); plt.ylabel("Energy Efficiency")
+    plt.grid(True); plt.legend()
+    plt.savefig(os.path.join(output_dir, "energy_efficiency_compare.png"))
     plt.close()
 
     print(f"Comparison plots saved into '{output_dir}' folder:")
@@ -91,6 +106,7 @@ def main():
     print("  - energy_compare.png")
     print("  - preference_deviation_compare.png")
     print("  - cache_hit_rate_compare.png")
+    print("  - energy_efficiency_compare.png")
 
 if __name__ == "__main__":
     main()
