@@ -1,0 +1,107 @@
+Experiment batch started at 2025-04-15 10:25:00
+Configuration file: experiment_configs/fig6_video_count.json
+Number of configurations: 6
+Modes: full, random_all, random_ua, random_rec, random_ca
+
+[1/6] Running: Figure 6: Video count 7
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_7.json --mode full
+  - Status: Completed in 1022.77 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_7.json --mode random_all
+  - Status: Completed in 915.02 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_7.json --mode random_ua
+  - Status: Completed in 961.54 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_7.json --mode random_rec
+  - Status: Completed in 999.87 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_7.json --mode random_ca
+  - Status: Completed in 926.23 seconds
+
+[2/6] Running: Figure 6: Video count 8
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_8.json --mode full
+  - Status: Completed in 1042.87 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_8.json --mode random_all
+  - Status: Completed in 976.39 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_8.json --mode random_ua
+  - Status: Completed in 985.83 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_8.json --mode random_rec
+  - Status: Completed in 987.48 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_8.json --mode random_ca
+  - Status: Completed in 928.36 seconds
+
+[3/6] Running: Figure 6: Video count 9
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_9.json --mode full
+  - Status: Completed in 1015.37 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_9.json --mode random_all
+  - Status: Completed in 936.67 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_9.json --mode random_ua
+  - Status: Completed in 1015.52 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_9.json --mode random_rec
+  - Status: Completed in 1013.77 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_9.json --mode random_ca
+  - Status: Completed in 940.07 seconds
+
+[4/6] Running: Figure 6: Video count 10
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_10.json --mode full
+  - Status: Completed in 1039.28 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_10.json --mode random_all
+  - Status: Completed in 951.13 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_10.json --mode random_ua
+  - Status: Completed in 1026.34 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_10.json --mode random_rec
+  - Status: Completed in 1061.49 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_10.json --mode random_ca
+  - Status: Completed in 1002.23 seconds
+
+[5/6] Running: Figure 6: Video count 11
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_11.json --mode full
+  - Status: Completed in 1044.78 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_11.json --mode random_all
+  - Status: Completed in 971.24 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_11.json --mode random_ua
+  - Status: Completed in 1036.29 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_11.json --mode random_rec
+  - Status: Completed in 1078.64 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_11.json --mode random_ca
+  - Status: Completed in 1005.37 seconds
+
+[6/6] Running: Figure 6: Video count 12
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_12.json --mode full
+  - Status: Completed in 1054.91 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_12.json --mode random_all
+  - Status: Completed in 976.22 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_12.json --mode random_ua
+  - Status: Completed in 983.84 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_12.json --mode random_rec
+  - Status: Completed in 830.26 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig6_video_count/Figure_6__Video_count_12.json --mode random_ca
+  - Status: Completed in 783.86 seconds
+

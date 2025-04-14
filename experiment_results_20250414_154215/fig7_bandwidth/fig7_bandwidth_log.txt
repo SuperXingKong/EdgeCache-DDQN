@@ -1,0 +1,107 @@
+Experiment batch started at 2025-04-15 18:36:54
+Configuration file: experiment_configs/fig7_bandwidth.json
+Number of configurations: 6
+Modes: full, random_all, random_ua, random_rec, random_ca
+
+[1/6] Running: Figure 7: Bandwidth 10 MHz
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_10_MHz.json --mode full
+  - Status: Completed in 788.83 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_10_MHz.json --mode random_all
+  - Status: Completed in 757.06 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_10_MHz.json --mode random_ua
+  - Status: Completed in 804.61 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_10_MHz.json --mode random_rec
+  - Status: Completed in 804.54 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_10_MHz.json --mode random_ca
+  - Status: Completed in 758.87 seconds
+
+[2/6] Running: Figure 7: Bandwidth 15 MHz
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_15_MHz.json --mode full
+  - Status: Completed in 808.67 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_15_MHz.json --mode random_all
+  - Status: Completed in 778.76 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_15_MHz.json --mode random_ua
+  - Status: Completed in 867.95 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_15_MHz.json --mode random_rec
+  - Status: Completed in 790.43 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_15_MHz.json --mode random_ca
+  - Status: Completed in 756.15 seconds
+
+[3/6] Running: Figure 7: Bandwidth 20 MHz
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_20_MHz.json --mode full
+  - Status: Completed in 841.68 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_20_MHz.json --mode random_all
+  - Status: Completed in 784.83 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_20_MHz.json --mode random_ua
+  - Status: Completed in 799.77 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_20_MHz.json --mode random_rec
+  - Status: Completed in 829.97 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_20_MHz.json --mode random_ca
+  - Status: Completed in 800.64 seconds
+
+[4/6] Running: Figure 7: Bandwidth 25 MHz
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_25_MHz.json --mode full
+  - Status: Completed in 864.13 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_25_MHz.json --mode random_all
+  - Status: Completed in 751.90 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_25_MHz.json --mode random_ua
+  - Status: Completed in 776.36 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_25_MHz.json --mode random_rec
+  - Status: Completed in 797.85 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_25_MHz.json --mode random_ca
+  - Status: Completed in 765.75 seconds
+
+[5/6] Running: Figure 7: Bandwidth 30 MHz
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_30_MHz.json --mode full
+  - Status: Completed in 797.32 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_30_MHz.json --mode random_all
+  - Status: Completed in 805.28 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_30_MHz.json --mode random_ua
+  - Status: Completed in 790.14 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_30_MHz.json --mode random_rec
+  - Status: Completed in 793.27 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_30_MHz.json --mode random_ca
+  - Status: Completed in 747.36 seconds
+
+[6/6] Running: Figure 7: Bandwidth 35 MHz
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_35_MHz.json --mode full
+  - Status: Completed in 791.59 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_35_MHz.json --mode random_all
+  - Status: Completed in 774.93 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_35_MHz.json --mode random_ua
+  - Status: Completed in 803.67 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_35_MHz.json --mode random_rec
+  - Status: Completed in 799.96 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig7_bandwidth/Figure_7__Bandwidth_35_MHz.json --mode random_ca
+  - Status: Completed in 799.50 seconds
+

@@ -1,0 +1,32 @@
+Experiment batch started at 2025-04-14 11:51:06
+Configuration file: experiment_configs/fig4_cache_capacity.json
+Number of configurations: 6
+Modes: full, random_all
+
+[1/6] Running: Figure 4: Caching capacity 8
+  - Mode: full
+  - Command: python train.py --config experiment_results_20250414_115106/fig4_cache_capacity/Figure_4__Caching_capacity_8.json --mode full
+  - Status: Completed in 587.45 seconds
+  - Mode: random_all
+  - Command: python train.py --config experiment_results_20250414_115106/fig4_cache_capacity/Figure_4__Caching_capacity_8.json --mode random_all
+  - Status: Completed in 600.73 seconds
+
+[2/6] Running: Figure 4: Caching capacity 9
+  - Mode: full
+  - Command: python train.py --config experiment_results_20250414_115106/fig4_cache_capacity/Figure_4__Caching_capacity_9.json --mode full
+  - Status: Completed in 597.46 seconds
+  - Mode: random_all
+  - Command: python train.py --config experiment_results_20250414_115106/fig4_cache_capacity/Figure_4__Caching_capacity_9.json --mode random_all
+  - Status: Completed in 605.10 seconds
+
+[3/6] Running: Figure 4: Caching capacity 10
+  - Mode: full
+  - Command: python train.py --config experiment_results_20250414_115106/fig4_cache_capacity/Figure_4__Caching_capacity_10.json --mode full
+  - Status: Completed in 599.43 seconds
+  - Mode: random_all
+  - Command: python train.py --config experiment_results_20250414_115106/fig4_cache_capacity/Figure_4__Caching_capacity_10.json --mode random_all
+  - Status: Completed in 608.28 seconds
+
+[4/6] Running: Figure 4: Caching capacity 11
+  - Mode: full
+  - Command: python train.py --config experiment_results_20250414_115106/fig4_cache_capacity/Figure_4__Caching_capacity_11.json --mode full
