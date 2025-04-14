@@ -1,8 +1,8 @@
 import torch
 import numpy as np
 import argparse
-from env import Environment
 from ddqn import DDQNAgent
+from advanced_env import AdvancedEnvironment
 
 def random_caching(env):
     """
@@ -60,13 +60,13 @@ def main():
     args = parser.parse_args()
 
     # Configuration
-    M = 2       # number of base stations
-    N = 4       # number of users
-    F = 6       # number of videos
-    K = 2       # layers per video
-    C_cache = 4  # cache capacity per BS (number of items)
-    C_rec = 3    # recommendation list size per BS
-    episodes = 1000
+    M = 2        # 基站数
+    N = 4        # 用户数
+    F = 6        # 视频数
+    K = 2        # 每视频层数
+    C_cache = 4  # 缓存容量(层数)
+    C_rec = 3    # 推荐容量
+    episodes = 3000
     steps_per_episode = 50
     gamma = 0.95
     lr = 1e-3
@@ -75,115 +75,128 @@ def main():
     target_update_freq = 100
     seed = 42
 
-    # Initialize environment and agent
-    env = Environment(M=M, N=N, F=F, K=K, C_cache=C_cache, C_rec=C_rec, seed=seed)
+    # ==================
+    # 创建环境 & DDQN智能体
+    # ==================
+    env = AdvancedEnvironment(
+        M=M, N=N, F=F, K=K, 
+        C_cache=C_cache, C_rec=C_rec, 
+        D_max=0.2, phi=100,
+        B=10.0, BH_B=5.0,
+        P_m=1.0, w_BH=0.5,
+        seed=seed
+    )
     agent = DDQNAgent(env, hidden_dim=128, batch_size=batch_size, lr=lr, gamma=gamma,
                       target_update_freq=target_update_freq, memory_capacity=memory_capacity)
 
-    # Logging
+    # 日志记录
     reward_history = []
     energy_history = []
     D_history = []
     hitrate_history = []
+    eff_history = []  # 新增: 能量效率
 
     print(f"=== Training Mode: {args.mode} ===")
 
-    # Training loop
+    # ==================
+    # 训练循环
+    # ==================
     for ep in range(1, episodes+1):
         state = env.reset()
-        ep_reward = ep_energy = ep_D = ep_hitrate = 0.0
+        ep_reward = ep_energy = ep_D = ep_hitrate = ep_eff = 0.0
+
         for t in range(1, steps_per_episode+1):
+            # 1) 根据 mode 选择动作
             if args.mode == "full":
-                # 全部DDQN优化
+                # 全部由DDQN做决策
                 X, Y, Z, action_mask = agent.select_action(state)
             else:
-                # 部分随机：先让agent选出完整的动作mask
+                # 先用DDQN生成一份完整动作 (X_ddqn, Y_ddqn, Z_ddqn)
                 X_ddqn, Y_ddqn, Z_ddqn, action_mask_ddqn = agent.select_action(state)
 
-                # 然后根据mode覆盖部分随机
+                # 部分改为随机策略
                 if args.mode == "random_all":
                     X = random_caching(env)
                     Y = random_recommendation(env)
                     Z = random_association(env)
                 elif args.mode == "random_ua":
-                    # 缓存、推荐 = DDQN，用户关联=随机
                     X = X_ddqn
                     Y = Y_ddqn
                     Z = random_association(env)
                 elif args.mode == "random_rec":
-                    # 缓存、用户关联=DDQN，推荐=随机
                     X = X_ddqn
                     Y = random_recommendation(env)
                     Z = Z_ddqn
                 elif args.mode == "random_ca":
-                    # 推荐、用户关联=DDQN，缓存=随机
                     X = random_caching(env)
                     Y = Y_ddqn
                     Z = Z_ddqn
-                # 最后合成一个 action_mask 以存储，但不会真正影响环境
-                # (因为 env.step() 用的是 X,Y,Z)
-                # 我们只需要把真实使用的 X,Y,Z 拼成 flatten 用来做 experience replay
+
+                # 将最终 (X,Y,Z) 拼接成 action_mask 用于存储经验
                 mask_len = 2*env.M*env.F*env.K + env.M*env.N
-                # flatten X, Y, Z
-                action_mask_parts = [
-                    X.flatten(),
-                    Y.flatten(),
-                    Z.flatten()
-                ]
-                action_mask = np.concatenate(action_mask_parts).astype(np.float32)
-            
-            # Take action in env
+                new_mask = np.concatenate([X.flatten(), Y.flatten(), Z.flatten()]).astype(np.float32)
+                # 这里的 new_mask 代替 action_mask => 用于 replay buffer
+                action_mask = new_mask
+
+            # 2) 执行动作
             next_state, reward, done, info = env.step(X, Y, Z)
-            done_flag = True if t == steps_per_episode else False
-            # Store transition and update agent
+            done_flag = (t == steps_per_episode)  # 此处简单episode长度
+
+            # 3) 存储并更新
             agent.store_transition(state, action_mask, reward, next_state, done_flag)
-            
-            # 注意：无论是否 random，一律用 DQN 来更新（因为要继续学习 Q 函数）
-            # 这样只不过是环境实际动作部分随机，不影响 Q 更新的过程。
-            # 这也意味着在 random_X 模式下，Q 学到的东西不一定真实→ 只用于对比baseline
             agent.update()
 
-            # Accumulate metrics
+            # 记录指标
             ep_reward += reward
             ep_energy += info["E_total"]
             ep_D += info["D"]
             ep_hitrate += info["cache_hit_rate"]
+            ep_eff += info.get("energy_efficiency", 0.0)
 
             state = next_state
             if done_flag:
                 break
 
-        # Decay epsilon after each episode
+        # epsilon 衰减
         if agent.epsilon > agent.min_epsilon:
             agent.epsilon *= agent.epsilon_decay
             if agent.epsilon < agent.min_epsilon:
                 agent.epsilon = agent.min_epsilon
 
-        # Record average metrics for the episode
+        # 计算当回合平均值
         avg_reward = ep_reward / steps_per_episode
         avg_energy = ep_energy / steps_per_episode
         avg_D = ep_D / steps_per_episode
         avg_hitrate = ep_hitrate / steps_per_episode
+        avg_eff = ep_eff / steps_per_episode
+
         reward_history.append(avg_reward)
         energy_history.append(avg_energy)
         D_history.append(avg_D)
         hitrate_history.append(avg_hitrate)
+        eff_history.append(avg_eff)
 
-        # Progress printout
+        # 日志输出
         if ep % 10 == 0 or ep == 1:
-            print(f"Episode {ep}/{episodes}: avg_reward={avg_reward:.3f}, avg_energy={avg_energy:.3f}, "
-                  f"avg_D={avg_D:.3f}, hit_rate={avg_hitrate:.3f}, epsilon={agent.epsilon:.2f}")
+            print(f"Episode {ep}/{episodes}: "
+                  f"avg_reward={avg_reward:.3f}, avg_energy={avg_energy:.3f}, "
+                  f"avg_D={avg_D:.3f}, hit_rate={avg_hitrate:.3f}, "
+                  f"energy_eff={avg_eff:.3f}, epsilon={agent.epsilon:.2f}")
 
-    # Save model and metrics (include mode info)
+    # ==================
+    # 训练完成，保存结果
+    # ==================
     save_name = f"ddqn_model_{args.mode}.pth"
     torch.save(agent.q_network.state_dict(), save_name)
-    np.savez(f"training_metrics_{args.mode}.npz", 
+    np.savez(f"training_metrics_{args.mode}.npz",
              reward=np.array(reward_history, dtype=np.float32),
              energy=np.array(energy_history, dtype=np.float32),
              D=np.array(D_history, dtype=np.float32),
-             hit_rate=np.array(hitrate_history, dtype=np.float32))
+             hit_rate=np.array(hitrate_history, dtype=np.float32),
+             energy_eff=np.array(eff_history, dtype=np.float32))
     print(f"Training completed under mode='{args.mode}'.")
     print(f"Model saved to {save_name} and metrics to training_metrics_{args.mode}.npz")
+
 
 if __name__ == "__main__":
     main()
