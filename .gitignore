@@ -29,9 +29,13 @@ dist/
 .idea/
 *.iml
 
+# 排除所有模型文件，但保留models文件夹中的文件
 *.pth
 *.pt
 *.onnx
 *.npz
+!models/*.pth
+!models/*.pt
+!models/*.npz
 data/
 checkpoints/
