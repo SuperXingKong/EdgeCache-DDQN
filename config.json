@@ -1,0 +1,24 @@
+{
+    "M": 2,
+    "N": 4,
+    "F": 6,
+    "K": 2,
+    "C_cache": 4,
+    "C_rec": 3,
+    "episodes": 3000,
+    "steps_per_episode": 50,
+    "gamma": 0.95,
+    "lr": 0.001,
+    "batch_size": 64,
+    "memory_capacity": 10000,
+    "target_update_freq": 100,
+    "seed": 42,
+    "env_params": {
+        "D_max": 0.2,
+        "phi": 100,
+        "B": 10.0,
+        "BH_B": 5.0,
+        "P_m": 1.0,
+        "w_BH": 0.5
+    }
+}

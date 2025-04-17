@@ -1,0 +1,22 @@
+Experiment batch started at 2025-04-14 15:42:15
+Configuration file: experiment_configs/base_config.json
+Number of configurations: 1
+Modes: full, random_all, random_ua, random_rec, random_ca
+
+[1/1] Running: config_0
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/base_config/config_0.json --mode full
+  - Status: Completed in 1041.58 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/base_config/config_0.json --mode random_all
+  - Status: Completed in 952.76 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/base_config/config_0.json --mode random_ua
+  - Status: Completed in 1015.50 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/base_config/config_0.json --mode random_rec
+  - Status: Completed in 1024.86 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/base_config/config_0.json --mode random_ca
+  - Status: Completed in 958.44 seconds
+

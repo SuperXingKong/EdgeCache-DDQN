@@ -1,0 +1,158 @@
+Experiment batch started at 2025-04-16 08:59:24
+Configuration file: experiment_configs/fig9_deviation_tolerance.json
+Number of configurations: 9
+Modes: full, random_all, random_ua, random_rec, random_ca
+
+[1/9] Running: Figure 9: Deviation tolerance 0.05
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.05.json --mode full
+  - Status: Completed in 804.43 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.05.json --mode random_all
+  - Status: Completed in 782.94 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.05.json --mode random_ua
+  - Status: Completed in 806.77 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.05.json --mode random_rec
+  - Status: Completed in 807.16 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.05.json --mode random_ca
+  - Status: Completed in 772.45 seconds
+
+[2/9] Running: Figure 9: Deviation tolerance 0.06
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.06.json --mode full
+  - Status: Completed in 793.35 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.06.json --mode random_all
+  - Status: Completed in 777.47 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.06.json --mode random_ua
+  - Status: Completed in 790.30 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.06.json --mode random_rec
+  - Status: Completed in 810.41 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.06.json --mode random_ca
+  - Status: Completed in 788.83 seconds
+
+[3/9] Running: Figure 9: Deviation tolerance 0.07
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.07.json --mode full
+  - Status: Completed in 803.20 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.07.json --mode random_all
+  - Status: Completed in 772.19 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.07.json --mode random_ua
+  - Status: Completed in 807.24 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.07.json --mode random_rec
+  - Status: Completed in 801.40 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.07.json --mode random_ca
+  - Status: Completed in 750.33 seconds
+
+[4/9] Running: Figure 9: Deviation tolerance 0.08
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.08.json --mode full
+  - Status: Completed in 800.68 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.08.json --mode random_all
+  - Status: Completed in 752.58 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.08.json --mode random_ua
+  - Status: Completed in 795.42 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.08.json --mode random_rec
+  - Status: Completed in 801.36 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.08.json --mode random_ca
+  - Status: Completed in 763.24 seconds
+
+[5/9] Running: Figure 9: Deviation tolerance 0.09
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.09.json --mode full
+  - Status: Completed in 792.54 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.09.json --mode random_all
+  - Status: Completed in 754.28 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.09.json --mode random_ua
+  - Status: Completed in 833.97 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.09.json --mode random_rec
+  - Status: Completed in 789.20 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.09.json --mode random_ca
+  - Status: Completed in 761.54 seconds
+
+[6/9] Running: Figure 9: Deviation tolerance 0.10
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.10.json --mode full
+  - Status: Completed in 806.00 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.10.json --mode random_all
+  - Status: Completed in 742.73 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.10.json --mode random_ua
+  - Status: Completed in 790.42 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.10.json --mode random_rec
+  - Status: Completed in 819.69 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.10.json --mode random_ca
+  - Status: Completed in 780.63 seconds
+
+[7/9] Running: Figure 9: Deviation tolerance 0.11
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.11.json --mode full
+  - Status: Completed in 794.60 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.11.json --mode random_all
+  - Status: Completed in 758.45 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.11.json --mode random_ua
+  - Status: Completed in 795.09 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.11.json --mode random_rec
+  - Status: Completed in 798.51 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.11.json --mode random_ca
+  - Status: Completed in 765.75 seconds
+
+[8/9] Running: Figure 9: Deviation tolerance 0.12
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.12.json --mode full
+  - Status: Completed in 801.88 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.12.json --mode random_all
+  - Status: Completed in 777.28 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.12.json --mode random_ua
+  - Status: Completed in 787.95 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.12.json --mode random_rec
+  - Status: Completed in 809.81 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.12.json --mode random_ca
+  - Status: Completed in 752.37 seconds
+
+[9/9] Running: Figure 9: Deviation tolerance 0.13
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.13.json --mode full
+  - Status: Completed in 820.95 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.13.json --mode random_all
+  - Status: Completed in 753.52 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.13.json --mode random_ua
+  - Status: Completed in 815.85 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.13.json --mode random_rec
+  - Status: Completed in 819.52 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig9_deviation_tolerance/Figure_9__Deviation_tolerance_0.13.json --mode random_ca
+  - Status: Completed in 767.97 seconds
+

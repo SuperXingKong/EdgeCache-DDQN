@@ -1,0 +1,25 @@
+{
+    "description": "Figure 9: Deviation tolerance 0.11",
+    "M": 3,
+    "N": 8,
+    "F": 10,
+    "K": 3,
+    "C_cache": 10,
+    "C_rec": 5,
+    "episodes": 1500,
+    "steps_per_episode": 50,
+    "gamma": 0.95,
+    "lr": 0.001,
+    "batch_size": 64,
+    "memory_capacity": 10000,
+    "target_update_freq": 100,
+    "seed": 42,
+    "env_params": {
+        "D_max": 0.11,
+        "phi": 100,
+        "B": 20.0,
+        "BH_B": 10.0,
+        "P_m": 1.0,
+        "w_BH": 0.5
+    }
+}

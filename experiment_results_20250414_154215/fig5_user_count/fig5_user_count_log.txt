@@ -1,0 +1,107 @@
+Experiment batch started at 2025-04-15 01:31:31
+Configuration file: experiment_configs/fig5_user_count.json
+Number of configurations: 6
+Modes: full, random_all, random_ua, random_rec, random_ca
+
+[1/6] Running: Figure 5: User count 7
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_7.json --mode full
+  - Status: Completed in 980.49 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_7.json --mode random_all
+  - Status: Completed in 911.98 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_7.json --mode random_ua
+  - Status: Completed in 1016.11 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_7.json --mode random_rec
+  - Status: Completed in 998.32 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_7.json --mode random_ca
+  - Status: Completed in 918.07 seconds
+
+[2/6] Running: Figure 5: User count 8
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_8.json --mode full
+  - Status: Completed in 1020.35 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_8.json --mode random_all
+  - Status: Completed in 996.22 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_8.json --mode random_ua
+  - Status: Completed in 1011.36 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_8.json --mode random_rec
+  - Status: Completed in 1026.77 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_8.json --mode random_ca
+  - Status: Completed in 988.54 seconds
+
+[3/6] Running: Figure 5: User count 9
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_9.json --mode full
+  - Status: Completed in 1080.44 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_9.json --mode random_all
+  - Status: Completed in 989.01 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_9.json --mode random_ua
+  - Status: Completed in 1060.05 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_9.json --mode random_rec
+  - Status: Completed in 1067.67 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_9.json --mode random_ca
+  - Status: Completed in 997.47 seconds
+
+[4/6] Running: Figure 5: User count 10
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_10.json --mode full
+  - Status: Completed in 1121.50 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_10.json --mode random_all
+  - Status: Completed in 1043.89 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_10.json --mode random_ua
+  - Status: Completed in 1130.09 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_10.json --mode random_rec
+  - Status: Completed in 1104.23 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_10.json --mode random_ca
+  - Status: Completed in 1024.43 seconds
+
+[5/6] Running: Figure 5: User count 11
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_11.json --mode full
+  - Status: Completed in 1156.04 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_11.json --mode random_all
+  - Status: Completed in 1072.93 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_11.json --mode random_ua
+  - Status: Completed in 1188.58 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_11.json --mode random_rec
+  - Status: Completed in 1151.77 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_11.json --mode random_ca
+  - Status: Completed in 1064.38 seconds
+
+[6/6] Running: Figure 5: User count 12
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_12.json --mode full
+  - Status: Completed in 1205.90 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_12.json --mode random_all
+  - Status: Completed in 1094.10 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_12.json --mode random_ua
+  - Status: Completed in 1247.33 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_12.json --mode random_rec
+  - Status: Completed in 1197.04 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig5_user_count/Figure_5__User_count_12.json --mode random_ca
+  - Status: Completed in 1144.42 seconds
+

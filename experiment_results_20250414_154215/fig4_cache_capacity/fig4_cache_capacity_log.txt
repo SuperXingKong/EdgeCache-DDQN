@@ -1,0 +1,107 @@
+Experiment batch started at 2025-04-14 17:05:29
+Configuration file: experiment_configs/fig4_cache_capacity.json
+Number of configurations: 6
+Modes: full, random_all, random_ua, random_rec, random_ca
+
+[1/6] Running: Figure 4: Caching capacity 8
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_8.json --mode full
+  - Status: Completed in 1001.38 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_8.json --mode random_all
+  - Status: Completed in 934.55 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_8.json --mode random_ua
+  - Status: Completed in 1025.28 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_8.json --mode random_rec
+  - Status: Completed in 1029.21 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_8.json --mode random_ca
+  - Status: Completed in 915.46 seconds
+
+[2/6] Running: Figure 4: Caching capacity 9
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_9.json --mode full
+  - Status: Completed in 1009.12 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_9.json --mode random_all
+  - Status: Completed in 958.11 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_9.json --mode random_ua
+  - Status: Completed in 1002.00 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_9.json --mode random_rec
+  - Status: Completed in 1012.28 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_9.json --mode random_ca
+  - Status: Completed in 938.06 seconds
+
+[3/6] Running: Figure 4: Caching capacity 10
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_10.json --mode full
+  - Status: Completed in 1012.10 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_10.json --mode random_all
+  - Status: Completed in 948.28 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_10.json --mode random_ua
+  - Status: Completed in 1015.02 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_10.json --mode random_rec
+  - Status: Completed in 1021.93 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_10.json --mode random_ca
+  - Status: Completed in 953.25 seconds
+
+[4/6] Running: Figure 4: Caching capacity 11
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_11.json --mode full
+  - Status: Completed in 1054.69 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_11.json --mode random_all
+  - Status: Completed in 969.32 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_11.json --mode random_ua
+  - Status: Completed in 1050.69 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_11.json --mode random_rec
+  - Status: Completed in 1053.81 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_11.json --mode random_ca
+  - Status: Completed in 987.97 seconds
+
+[5/6] Running: Figure 4: Caching capacity 12
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_12.json --mode full
+  - Status: Completed in 1050.74 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_12.json --mode random_all
+  - Status: Completed in 979.86 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_12.json --mode random_ua
+  - Status: Completed in 1090.77 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_12.json --mode random_rec
+  - Status: Completed in 1056.84 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_12.json --mode random_ca
+  - Status: Completed in 977.41 seconds
+
+[6/6] Running: Figure 4: Caching capacity 13
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_13.json --mode full
+  - Status: Completed in 1080.88 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_13.json --mode random_all
+  - Status: Completed in 1031.45 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_13.json --mode random_ua
+  - Status: Completed in 1109.40 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_13.json --mode random_rec
+  - Status: Completed in 1085.06 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig4_cache_capacity/Figure_4__Caching_capacity_13.json --mode random_ca
+  - Status: Completed in 1007.33 seconds
+

@@ -1,0 +1,124 @@
+Experiment batch started at 2025-04-16 01:14:06
+Configuration file: experiment_configs/fig8_recommendation_size.json
+Number of configurations: 7
+Modes: full, random_all, random_ua, random_rec, random_ca
+
+[1/7] Running: Figure 8: Recommendation size 3
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_3.json --mode full
+  - Status: Completed in 749.30 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_3.json --mode random_all
+  - Status: Completed in 752.87 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_3.json --mode random_ua
+  - Status: Completed in 778.30 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_3.json --mode random_rec
+  - Status: Completed in 773.44 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_3.json --mode random_ca
+  - Status: Completed in 748.29 seconds
+
+[2/7] Running: Figure 8: Recommendation size 4
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_4.json --mode full
+  - Status: Completed in 785.03 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_4.json --mode random_all
+  - Status: Completed in 749.37 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_4.json --mode random_ua
+  - Status: Completed in 773.92 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_4.json --mode random_rec
+  - Status: Completed in 783.55 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_4.json --mode random_ca
+  - Status: Completed in 738.44 seconds
+
+[3/7] Running: Figure 8: Recommendation size 5
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_5.json --mode full
+  - Status: Completed in 879.50 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_5.json --mode random_all
+  - Status: Completed in 736.14 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_5.json --mode random_ua
+  - Status: Completed in 789.00 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_5.json --mode random_rec
+  - Status: Completed in 826.51 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_5.json --mode random_ca
+  - Status: Completed in 746.22 seconds
+
+[4/7] Running: Figure 8: Recommendation size 6
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_6.json --mode full
+  - Status: Completed in 805.86 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_6.json --mode random_all
+  - Status: Completed in 772.48 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_6.json --mode random_ua
+  - Status: Completed in 822.18 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_6.json --mode random_rec
+  - Status: Completed in 811.79 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_6.json --mode random_ca
+  - Status: Completed in 770.06 seconds
+
+[5/7] Running: Figure 8: Recommendation size 7
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_7.json --mode full
+  - Status: Completed in 828.23 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_7.json --mode random_all
+  - Status: Completed in 782.25 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_7.json --mode random_ua
+  - Status: Completed in 821.67 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_7.json --mode random_rec
+  - Status: Completed in 843.13 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_7.json --mode random_ca
+  - Status: Completed in 787.35 seconds
+
+[6/7] Running: Figure 8: Recommendation size 8
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_8.json --mode full
+  - Status: Completed in 832.89 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_8.json --mode random_all
+  - Status: Completed in 795.32 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_8.json --mode random_ua
+  - Status: Completed in 825.63 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_8.json --mode random_rec
+  - Status: Completed in 829.38 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_8.json --mode random_ca
+  - Status: Completed in 786.72 seconds
+
+[7/7] Running: Figure 8: Recommendation size 9
+  - Mode: full
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_9.json --mode full
+  - Status: Completed in 856.80 seconds
+  - Mode: random_all
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_9.json --mode random_all
+  - Status: Completed in 815.35 seconds
+  - Mode: random_ua
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_9.json --mode random_ua
+  - Status: Completed in 852.03 seconds
+  - Mode: random_rec
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_9.json --mode random_rec
+  - Status: Completed in 852.17 seconds
+  - Mode: random_ca
+  - Command: python optimized_train.py --config experiment_results_20250414_154215/fig8_recommendation_size/Figure_8__Recommendation_size_9.json --mode random_ca
+  - Status: Completed in 817.22 seconds
+

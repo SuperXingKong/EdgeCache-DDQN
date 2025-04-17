@@ -1,0 +1,274 @@
+使用命令行指定的mode: full
+DDQNAgent initialized with device: cuda
+Is CUDA available: True
+CUDA Device Name: Tesla V100-SXM2-16GB
+正在应用最高级别优化...
+优化应用完成!
+使用设备: cuda
+GPU型号: Tesla V100-SXM2-16GB
+CUDA版本: 12.1
+=== Training Mode: full ===
+Parameters: M=3, N=8, F=10, K=3, C_cache=10, C_rec=5, lr=0.001
+Episode 1/1500: avg_reward=-34454085.699, avg_energy=34454085.699, avg_D=0.057, hit_rate=0.320, energy_eff=1.092, epsilon=0.99, time=0.09s, steps/s=569.5
+Episode 10/1500: avg_reward=-33785756.845, avg_energy=33785756.845, avg_D=0.055, hit_rate=0.327, energy_eff=1.133, epsilon=0.90, time=0.39s, steps/s=129.7
+Episode 20/1500: avg_reward=-30980821.176, avg_energy=30980821.176, avg_D=0.055, hit_rate=0.317, energy_eff=1.248, epsilon=0.82, time=0.38s, steps/s=130.1
+Episode 30/1500: avg_reward=-31627282.502, avg_energy=31627282.502, avg_D=0.053, hit_rate=0.306, energy_eff=1.275, epsilon=0.74, time=0.42s, steps/s=119.6
+Episode 40/1500: avg_reward=-29666686.933, avg_energy=29666686.933, avg_D=0.059, hit_rate=0.304, energy_eff=1.441, epsilon=0.67, time=0.43s, steps/s=116.5
+Episode 50/1500: avg_reward=-29174423.135, avg_energy=29174423.135, avg_D=0.059, hit_rate=0.345, energy_eff=1.512, epsilon=0.61, time=0.43s, steps/s=116.2
+Episode 60/1500: avg_reward=-30703103.384, avg_energy=30703103.384, avg_D=0.057, hit_rate=0.339, energy_eff=1.389, epsilon=0.55, time=0.44s, steps/s=113.1
+Episode 70/1500: avg_reward=-29819230.424, avg_energy=29819230.424, avg_D=0.059, hit_rate=0.318, energy_eff=1.448, epsilon=0.49, time=0.47s, steps/s=106.3
+Episode 80/1500: avg_reward=-29219049.999, avg_energy=29219049.999, avg_D=0.056, hit_rate=0.292, energy_eff=1.488, epsilon=0.45, time=0.49s, steps/s=101.0
+Episode 90/1500: avg_reward=-29473222.517, avg_energy=29473222.517, avg_D=0.055, hit_rate=0.341, energy_eff=1.515, epsilon=0.40, time=0.49s, steps/s=103.0
+Episode 100/1500: avg_reward=-27020598.164, avg_energy=27020598.164, avg_D=0.058, hit_rate=0.346, energy_eff=1.555, epsilon=0.37, time=0.49s, steps/s=102.9
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.36GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 1
+0%
+====================
+
+Episode 110/1500: avg_reward=-22149509.766, avg_energy=22149509.766, avg_D=0.053, hit_rate=0.419, energy_eff=1.903, epsilon=0.33, time=0.50s, steps/s=99.8
+Episode 120/1500: avg_reward=-26840435.008, avg_energy=26840435.008, avg_D=0.057, hit_rate=0.362, energy_eff=1.628, epsilon=0.30, time=0.49s, steps/s=101.0
+Episode 130/1500: avg_reward=-23785225.309, avg_energy=23785225.309, avg_D=0.061, hit_rate=0.342, energy_eff=1.921, epsilon=0.27, time=0.49s, steps/s=102.6
+Episode 140/1500: avg_reward=-17450742.045, avg_energy=17450742.045, avg_D=0.060, hit_rate=0.418, energy_eff=2.512, epsilon=0.24, time=0.53s, steps/s=94.7
+Episode 150/1500: avg_reward=-20962241.287, avg_energy=20962241.287, avg_D=0.059, hit_rate=0.417, energy_eff=2.246, epsilon=0.22, time=0.50s, steps/s=100.0
+Episode 160/1500: avg_reward=-20720270.085, avg_energy=20720270.085, avg_D=0.059, hit_rate=0.409, energy_eff=2.119, epsilon=0.20, time=0.52s, steps/s=96.7
+Episode 170/1500: avg_reward=-23029132.803, avg_energy=23029132.803, avg_D=0.059, hit_rate=0.422, energy_eff=1.902, epsilon=0.18, time=0.49s, steps/s=101.7
+Episode 180/1500: avg_reward=-21449972.180, avg_energy=21449972.180, avg_D=0.064, hit_rate=0.401, energy_eff=2.039, epsilon=0.16, time=0.51s, steps/s=98.4
+Episode 190/1500: avg_reward=-21955946.778, avg_energy=21955946.778, avg_D=0.059, hit_rate=0.385, energy_eff=1.971, epsilon=0.15, time=0.51s, steps/s=97.7
+Episode 200/1500: avg_reward=-16568605.480, avg_energy=16568605.480, avg_D=0.055, hit_rate=0.317, energy_eff=2.495, epsilon=0.13, time=0.54s, steps/s=92.2
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.37GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 3
+0%
+====================
+
+Episode 210/1500: avg_reward=-19183886.838, avg_energy=19183886.838, avg_D=0.054, hit_rate=0.361, energy_eff=2.358, epsilon=0.12, time=0.53s, steps/s=94.8
+Episode 220/1500: avg_reward=-15519881.479, avg_energy=15519881.479, avg_D=0.050, hit_rate=0.368, energy_eff=2.851, epsilon=0.11, time=0.54s, steps/s=93.3
+Episode 230/1500: avg_reward=-20107890.368, avg_energy=20107890.368, avg_D=0.053, hit_rate=0.367, energy_eff=2.336, epsilon=0.10, time=0.51s, steps/s=97.7
+Episode 240/1500: avg_reward=-16156144.229, avg_energy=16156144.229, avg_D=0.051, hit_rate=0.360, energy_eff=3.038, epsilon=0.10, time=0.53s, steps/s=94.8
+Episode 250/1500: avg_reward=-15687849.182, avg_energy=15687849.182, avg_D=0.050, hit_rate=0.380, energy_eff=2.651, epsilon=0.10, time=0.54s, steps/s=92.6
+Episode 260/1500: avg_reward=-16816634.047, avg_energy=16816634.047, avg_D=0.050, hit_rate=0.377, energy_eff=2.614, epsilon=0.10, time=0.53s, steps/s=93.9
+Episode 270/1500: avg_reward=-14039065.061, avg_energy=14039065.061, avg_D=0.049, hit_rate=0.369, energy_eff=2.874, epsilon=0.10, time=0.54s, steps/s=92.1
+Episode 280/1500: avg_reward=-18554734.311, avg_energy=18554734.311, avg_D=0.051, hit_rate=0.360, energy_eff=2.415, epsilon=0.10, time=0.52s, steps/s=96.7
+Episode 290/1500: avg_reward=-14823217.965, avg_energy=14823217.965, avg_D=0.050, hit_rate=0.353, energy_eff=2.982, epsilon=0.10, time=0.53s, steps/s=94.1
+Episode 300/1500: avg_reward=-14605140.662, avg_energy=14605140.662, avg_D=0.050, hit_rate=0.352, energy_eff=2.868, epsilon=0.10, time=0.54s, steps/s=92.4
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.37GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 3
+0%
+====================
+
+Episode 310/1500: avg_reward=-17268100.362, avg_energy=17268100.362, avg_D=0.048, hit_rate=0.359, energy_eff=2.696, epsilon=0.10, time=0.52s, steps/s=96.7
+Episode 320/1500: avg_reward=-14360898.067, avg_energy=14360898.067, avg_D=0.047, hit_rate=0.361, energy_eff=2.882, epsilon=0.10, time=0.54s, steps/s=93.4
+Episode 330/1500: avg_reward=-14244047.284, avg_energy=14244047.284, avg_D=0.047, hit_rate=0.368, energy_eff=2.852, epsilon=0.10, time=0.54s, steps/s=93.1
+Episode 340/1500: avg_reward=-18269629.727, avg_energy=18269629.727, avg_D=0.057, hit_rate=0.332, energy_eff=2.236, epsilon=0.10, time=0.53s, steps/s=94.7
+Episode 350/1500: avg_reward=-17169489.151, avg_energy=17169489.151, avg_D=0.057, hit_rate=0.348, energy_eff=2.363, epsilon=0.10, time=0.53s, steps/s=95.0
+Episode 360/1500: avg_reward=-14350107.420, avg_energy=14350107.420, avg_D=0.045, hit_rate=0.375, energy_eff=2.475, epsilon=0.10, time=0.54s, steps/s=92.6
+Episode 370/1500: avg_reward=-13339217.573, avg_energy=13339217.573, avg_D=0.044, hit_rate=0.379, energy_eff=2.742, epsilon=0.10, time=0.54s, steps/s=92.4
+Episode 380/1500: avg_reward=-15160080.468, avg_energy=15160080.468, avg_D=0.046, hit_rate=0.360, energy_eff=2.636, epsilon=0.10, time=0.54s, steps/s=93.2
+Episode 390/1500: avg_reward=-17521270.289, avg_energy=17521270.289, avg_D=0.046, hit_rate=0.360, energy_eff=2.540, epsilon=0.10, time=0.51s, steps/s=98.5
+Episode 400/1500: avg_reward=-13390865.461, avg_energy=13390865.461, avg_D=0.046, hit_rate=0.358, energy_eff=2.822, epsilon=0.10, time=0.54s, steps/s=92.8
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.37GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 14
+0%
+====================
+
+Episode 410/1500: avg_reward=-14519428.274, avg_energy=14519428.274, avg_D=0.045, hit_rate=0.404, energy_eff=2.741, epsilon=0.10, time=0.53s, steps/s=94.3
+Episode 420/1500: avg_reward=-14727947.075, avg_energy=14727947.075, avg_D=0.042, hit_rate=0.352, energy_eff=2.791, epsilon=0.10, time=0.53s, steps/s=93.5
+Episode 430/1500: avg_reward=-14124116.944, avg_energy=14124116.944, avg_D=0.042, hit_rate=0.402, energy_eff=2.625, epsilon=0.10, time=0.54s, steps/s=92.7
+Episode 440/1500: avg_reward=-13110814.029, avg_energy=13110814.029, avg_D=0.042, hit_rate=0.399, energy_eff=2.866, epsilon=0.10, time=0.59s, steps/s=85.0
+Episode 450/1500: avg_reward=-13176671.311, avg_energy=13176671.311, avg_D=0.043, hit_rate=0.399, energy_eff=2.828, epsilon=0.10, time=0.54s, steps/s=92.8
+Episode 460/1500: avg_reward=-17483533.052, avg_energy=17483533.052, avg_D=0.044, hit_rate=0.392, energy_eff=2.289, epsilon=0.10, time=0.52s, steps/s=96.5
+Episode 470/1500: avg_reward=-14450121.886, avg_energy=14450121.886, avg_D=0.043, hit_rate=0.394, energy_eff=2.720, epsilon=0.10, time=0.53s, steps/s=93.7
+Episode 480/1500: avg_reward=-13853055.029, avg_energy=13853055.029, avg_D=0.043, hit_rate=0.398, energy_eff=2.826, epsilon=0.10, time=0.54s, steps/s=91.9
+Episode 490/1500: avg_reward=-18533660.465, avg_energy=18533660.465, avg_D=0.044, hit_rate=0.388, energy_eff=2.244, epsilon=0.10, time=0.52s, steps/s=96.4
+Episode 500/1500: avg_reward=-15437122.222, avg_energy=15437122.222, avg_D=0.043, hit_rate=0.401, energy_eff=2.641, epsilon=0.10, time=0.53s, steps/s=94.6
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.39GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 7
+0%
+====================
+
+Episode 510/1500: avg_reward=-13840243.837, avg_energy=13840243.837, avg_D=0.043, hit_rate=0.400, energy_eff=2.849, epsilon=0.10, time=0.54s, steps/s=93.4
+Episode 520/1500: avg_reward=-17108011.441, avg_energy=17108011.441, avg_D=0.044, hit_rate=0.365, energy_eff=2.333, epsilon=0.10, time=0.53s, steps/s=94.9
+Episode 530/1500: avg_reward=-18429596.629, avg_energy=18429596.629, avg_D=0.043, hit_rate=0.364, energy_eff=2.062, epsilon=0.10, time=0.53s, steps/s=94.9
+Episode 540/1500: avg_reward=-17549609.717, avg_energy=17549609.717, avg_D=0.045, hit_rate=0.360, energy_eff=2.370, epsilon=0.10, time=0.52s, steps/s=96.8
+Episode 550/1500: avg_reward=-14687190.534, avg_energy=14687190.534, avg_D=0.045, hit_rate=0.352, energy_eff=2.462, epsilon=0.10, time=0.53s, steps/s=93.8
+Episode 560/1500: avg_reward=-17771408.951, avg_energy=17771408.951, avg_D=0.043, hit_rate=0.330, energy_eff=2.053, epsilon=0.10, time=0.53s, steps/s=94.8
+Episode 570/1500: avg_reward=-13995127.062, avg_energy=13995127.062, avg_D=0.043, hit_rate=0.338, energy_eff=2.581, epsilon=0.10, time=0.53s, steps/s=93.5
+Episode 580/1500: avg_reward=-18127962.207, avg_energy=18127962.207, avg_D=0.043, hit_rate=0.328, energy_eff=2.133, epsilon=0.10, time=0.52s, steps/s=96.5
+Episode 590/1500: avg_reward=-16083941.894, avg_energy=16083941.894, avg_D=0.043, hit_rate=0.350, energy_eff=2.307, epsilon=0.10, time=0.53s, steps/s=94.0
+Episode 600/1500: avg_reward=-14553604.035, avg_energy=14553604.035, avg_D=0.042, hit_rate=0.259, energy_eff=2.412, epsilon=0.10, time=0.54s, steps/s=91.9
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.38GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 14
+0%
+====================
+
+Episode 610/1500: avg_reward=-18161476.554, avg_energy=18161476.554, avg_D=0.048, hit_rate=0.264, energy_eff=2.364, epsilon=0.10, time=0.51s, steps/s=98.0
+Episode 620/1500: avg_reward=-13953705.776, avg_energy=13953705.776, avg_D=0.046, hit_rate=0.251, energy_eff=2.753, epsilon=0.10, time=0.54s, steps/s=92.2
+Episode 630/1500: avg_reward=-14985465.342, avg_energy=14985465.342, avg_D=0.046, hit_rate=0.253, energy_eff=2.606, epsilon=0.10, time=0.54s, steps/s=93.1
+Episode 640/1500: avg_reward=-14586021.700, avg_energy=14586021.700, avg_D=0.046, hit_rate=0.292, energy_eff=2.599, epsilon=0.10, time=0.54s, steps/s=93.0
+Episode 650/1500: avg_reward=-15516385.983, avg_energy=15516385.983, avg_D=0.046, hit_rate=0.294, energy_eff=2.457, epsilon=0.10, time=0.54s, steps/s=92.9
+Episode 660/1500: avg_reward=-16792672.498, avg_energy=16792672.498, avg_D=0.046, hit_rate=0.266, energy_eff=2.261, epsilon=0.10, time=0.52s, steps/s=95.4
+Episode 670/1500: avg_reward=-11150895.838, avg_energy=11150895.838, avg_D=0.045, hit_rate=0.256, energy_eff=2.921, epsilon=0.10, time=0.58s, steps/s=86.5
+Episode 680/1500: avg_reward=-17275946.416, avg_energy=17275946.416, avg_D=0.048, hit_rate=0.284, energy_eff=2.341, epsilon=0.10, time=0.53s, steps/s=94.8
+Episode 690/1500: avg_reward=-14069281.916, avg_energy=14069281.916, avg_D=0.046, hit_rate=0.282, energy_eff=2.575, epsilon=0.10, time=0.54s, steps/s=92.0
+Episode 700/1500: avg_reward=-13316366.174, avg_energy=13316366.174, avg_D=0.046, hit_rate=0.289, energy_eff=2.736, epsilon=0.10, time=0.54s, steps/s=92.3
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.37GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 10
+0%
+====================
+
+Episode 710/1500: avg_reward=-14820912.328, avg_energy=14820912.328, avg_D=0.047, hit_rate=0.284, energy_eff=2.614, epsilon=0.10, time=0.54s, steps/s=93.0
+Episode 720/1500: avg_reward=-13230020.605, avg_energy=13230020.605, avg_D=0.046, hit_rate=0.287, energy_eff=2.777, epsilon=0.10, time=0.54s, steps/s=92.5
+Episode 730/1500: avg_reward=-15286035.628, avg_energy=15286035.628, avg_D=0.045, hit_rate=0.271, energy_eff=2.532, epsilon=0.10, time=0.53s, steps/s=94.5
+Episode 740/1500: avg_reward=-14328818.761, avg_energy=14328818.761, avg_D=0.045, hit_rate=0.273, energy_eff=2.579, epsilon=0.10, time=0.54s, steps/s=93.0
+Episode 750/1500: avg_reward=-13467506.379, avg_energy=13467506.379, avg_D=0.046, hit_rate=0.314, energy_eff=2.826, epsilon=0.10, time=0.54s, steps/s=92.1
+Episode 760/1500: avg_reward=-16651640.987, avg_energy=16651640.987, avg_D=0.047, hit_rate=0.286, energy_eff=2.445, epsilon=0.10, time=0.52s, steps/s=95.2
+Episode 770/1500: avg_reward=-18334409.487, avg_energy=18334409.487, avg_D=0.047, hit_rate=0.297, energy_eff=2.200, epsilon=0.10, time=0.53s, steps/s=93.7
+Episode 780/1500: avg_reward=-18907195.379, avg_energy=18907195.379, avg_D=0.047, hit_rate=0.238, energy_eff=1.843, epsilon=0.10, time=0.54s, steps/s=93.1
+Episode 790/1500: avg_reward=-19469182.936, avg_energy=19469182.936, avg_D=0.048, hit_rate=0.261, energy_eff=1.904, epsilon=0.10, time=0.53s, steps/s=94.4
+Episode 800/1500: avg_reward=-19509569.433, avg_energy=19509569.433, avg_D=0.050, hit_rate=0.289, energy_eff=1.847, epsilon=0.10, time=0.52s, steps/s=95.6
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.39GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 11
+0%
+====================
+
+Episode 810/1500: avg_reward=-17944896.246, avg_energy=17944896.246, avg_D=0.047, hit_rate=0.266, energy_eff=1.925, epsilon=0.10, time=0.53s, steps/s=94.0
+Episode 820/1500: avg_reward=-18541715.578, avg_energy=18541715.578, avg_D=0.044, hit_rate=0.246, energy_eff=1.908, epsilon=0.10, time=0.54s, steps/s=93.1
+Episode 830/1500: avg_reward=-16806133.771, avg_energy=16806133.771, avg_D=0.045, hit_rate=0.259, energy_eff=2.138, epsilon=0.10, time=0.54s, steps/s=92.5
+Episode 840/1500: avg_reward=-16890307.555, avg_energy=16890307.555, avg_D=0.044, hit_rate=0.266, energy_eff=2.111, epsilon=0.10, time=0.55s, steps/s=91.4
+Episode 850/1500: avg_reward=-19064372.947, avg_energy=19064372.947, avg_D=0.052, hit_rate=0.243, energy_eff=2.050, epsilon=0.10, time=0.53s, steps/s=93.8
+Episode 860/1500: avg_reward=-19518815.100, avg_energy=19518815.100, avg_D=0.046, hit_rate=0.262, energy_eff=1.895, epsilon=0.10, time=0.53s, steps/s=95.1
+Episode 870/1500: avg_reward=-17155340.610, avg_energy=17155340.610, avg_D=0.049, hit_rate=0.278, energy_eff=2.133, epsilon=0.10, time=0.53s, steps/s=93.7
+Episode 880/1500: avg_reward=-12411245.046, avg_energy=12411245.046, avg_D=0.051, hit_rate=0.302, energy_eff=2.916, epsilon=0.10, time=0.55s, steps/s=91.7
+Episode 890/1500: avg_reward=-16190566.457, avg_energy=16190566.457, avg_D=0.054, hit_rate=0.271, energy_eff=2.368, epsilon=0.10, time=0.54s, steps/s=92.8
+Episode 900/1500: avg_reward=-19418597.216, avg_energy=19418597.216, avg_D=0.056, hit_rate=0.278, energy_eff=2.059, epsilon=0.10, time=0.52s, steps/s=96.1
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.38GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 8
+0%
+====================
+
+Episode 910/1500: avg_reward=-20117020.827, avg_energy=20117020.827, avg_D=0.055, hit_rate=0.231, energy_eff=2.067, epsilon=0.10, time=0.52s, steps/s=96.8
+Episode 920/1500: avg_reward=-19542197.855, avg_energy=19542197.855, avg_D=0.048, hit_rate=0.226, energy_eff=1.778, epsilon=0.10, time=0.54s, steps/s=92.2
+Episode 930/1500: avg_reward=-22477035.647, avg_energy=22477035.647, avg_D=0.050, hit_rate=0.236, energy_eff=1.676, epsilon=0.10, time=0.51s, steps/s=97.6
+Episode 940/1500: avg_reward=-21553291.680, avg_energy=21553291.680, avg_D=0.049, hit_rate=0.235, energy_eff=1.601, epsilon=0.10, time=0.53s, steps/s=93.9
+Episode 950/1500: avg_reward=-22060361.362, avg_energy=22060361.362, avg_D=0.056, hit_rate=0.254, energy_eff=1.669, epsilon=0.10, time=0.54s, steps/s=93.1
+Episode 960/1500: avg_reward=-23431359.103, avg_energy=23431359.103, avg_D=0.057, hit_rate=0.255, energy_eff=1.637, epsilon=0.10, time=0.52s, steps/s=95.8
+Episode 970/1500: avg_reward=-19091347.442, avg_energy=19091347.442, avg_D=0.055, hit_rate=0.274, energy_eff=1.891, epsilon=0.10, time=0.54s, steps/s=92.4
+Episode 980/1500: avg_reward=-18479812.341, avg_energy=18479812.341, avg_D=0.059, hit_rate=0.248, energy_eff=2.047, epsilon=0.10, time=0.54s, steps/s=92.1
+Episode 990/1500: avg_reward=-17945180.463, avg_energy=17945180.463, avg_D=0.053, hit_rate=0.266, energy_eff=2.163, epsilon=0.10, time=0.52s, steps/s=96.2
+Episode 1000/1500: avg_reward=-13838623.820, avg_energy=13838623.820, avg_D=0.052, hit_rate=0.262, energy_eff=2.557, epsilon=0.10, time=0.55s, steps/s=91.6
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.38GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 14
+0%
+====================
+
+Episode 1010/1500: avg_reward=-16526558.220, avg_energy=16526558.220, avg_D=0.053, hit_rate=0.244, energy_eff=2.519, epsilon=0.10, time=0.53s, steps/s=94.5
+Episode 1020/1500: avg_reward=-15597898.784, avg_energy=15597898.784, avg_D=0.052, hit_rate=0.224, energy_eff=2.283, epsilon=0.10, time=0.54s, steps/s=91.8
+Episode 1030/1500: avg_reward=-18558243.445, avg_energy=18558243.445, avg_D=0.053, hit_rate=0.255, energy_eff=2.047, epsilon=0.10, time=0.53s, steps/s=94.9
+Episode 1040/1500: avg_reward=-18654335.175, avg_energy=18654335.175, avg_D=0.052, hit_rate=0.257, energy_eff=2.084, epsilon=0.10, time=0.53s, steps/s=93.9
+Episode 1050/1500: avg_reward=-14179052.020, avg_energy=14179052.020, avg_D=0.056, hit_rate=0.278, energy_eff=2.952, epsilon=0.10, time=0.53s, steps/s=93.8
+Episode 1060/1500: avg_reward=-13135845.727, avg_energy=13135845.727, avg_D=0.054, hit_rate=0.292, energy_eff=2.970, epsilon=0.10, time=0.54s, steps/s=92.1
+Episode 1070/1500: avg_reward=-13006397.523, avg_energy=13006397.523, avg_D=0.055, hit_rate=0.293, energy_eff=2.938, epsilon=0.10, time=0.54s, steps/s=92.4
+Episode 1080/1500: avg_reward=-14484656.032, avg_energy=14484656.032, avg_D=0.056, hit_rate=0.308, energy_eff=2.929, epsilon=0.10, time=0.53s, steps/s=93.7
+Episode 1090/1500: avg_reward=-14633799.547, avg_energy=14633799.547, avg_D=0.055, hit_rate=0.308, energy_eff=2.834, epsilon=0.10, time=0.52s, steps/s=95.3
+Episode 1100/1500: avg_reward=-13270354.361, avg_energy=13270354.361, avg_D=0.055, hit_rate=0.312, energy_eff=3.209, epsilon=0.10, time=0.53s, steps/s=94.0
+
+=== 资源使用情况 ===
+CPU使用率: 0.7%, 内存使用: 4.38GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 12
+0%
+====================
+
+Episode 1110/1500: avg_reward=-11413090.397, avg_energy=11413090.397, avg_D=0.056, hit_rate=0.308, energy_eff=3.251, epsilon=0.10, time=0.55s, steps/s=91.7
+Episode 1120/1500: avg_reward=-14705337.428, avg_energy=14705337.428, avg_D=0.056, hit_rate=0.328, energy_eff=2.978, epsilon=0.10, time=0.52s, steps/s=95.4
+Episode 1130/1500: avg_reward=-13204766.189, avg_energy=13204766.189, avg_D=0.057, hit_rate=0.322, energy_eff=3.001, epsilon=0.10, time=0.54s, steps/s=93.2
+Episode 1140/1500: avg_reward=-14351010.374, avg_energy=14351010.374, avg_D=0.056, hit_rate=0.297, energy_eff=2.990, epsilon=0.10, time=0.53s, steps/s=94.2
+Episode 1150/1500: avg_reward=-14297351.645, avg_energy=14297351.645, avg_D=0.056, hit_rate=0.279, energy_eff=2.824, epsilon=0.10, time=0.53s, steps/s=93.8
+Episode 1160/1500: avg_reward=-15605012.039, avg_energy=15605012.039, avg_D=0.056, hit_rate=0.279, energy_eff=2.685, epsilon=0.10, time=0.52s, steps/s=96.2
+Episode 1170/1500: avg_reward=-14155988.375, avg_energy=14155988.375, avg_D=0.056, hit_rate=0.294, energy_eff=2.929, epsilon=0.10, time=0.53s, steps/s=95.1
+Episode 1180/1500: avg_reward=-14398443.931, avg_energy=14398443.931, avg_D=0.056, hit_rate=0.289, energy_eff=2.831, epsilon=0.10, time=0.53s, steps/s=94.5
+Episode 1190/1500: avg_reward=-14206413.183, avg_energy=14206413.183, avg_D=0.055, hit_rate=0.285, energy_eff=2.813, epsilon=0.10, time=0.53s, steps/s=93.8
+Episode 1200/1500: avg_reward=-13547295.309, avg_energy=13547295.309, avg_D=0.055, hit_rate=0.287, energy_eff=3.040, epsilon=0.10, time=0.53s, steps/s=94.7
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.38GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 6
+0%
+====================
+
+Episode 1210/1500: avg_reward=-13219367.332, avg_energy=13219367.332, avg_D=0.055, hit_rate=0.292, energy_eff=2.966, epsilon=0.10, time=0.54s, steps/s=93.3
+Episode 1220/1500: avg_reward=-12931319.621, avg_energy=12931319.621, avg_D=0.056, hit_rate=0.314, energy_eff=3.019, epsilon=0.10, time=0.54s, steps/s=93.3
+Episode 1230/1500: avg_reward=-14213390.990, avg_energy=14213390.990, avg_D=0.056, hit_rate=0.300, energy_eff=2.906, epsilon=0.10, time=0.53s, steps/s=94.7
+Episode 1240/1500: avg_reward=-14591103.039, avg_energy=14591103.039, avg_D=0.055, hit_rate=0.308, energy_eff=2.853, epsilon=0.10, time=0.52s, steps/s=95.6
+Episode 1250/1500: avg_reward=-12510897.572, avg_energy=12510897.572, avg_D=0.056, hit_rate=0.313, energy_eff=3.095, epsilon=0.10, time=0.54s, steps/s=93.4
+Episode 1260/1500: avg_reward=-12228949.126, avg_energy=12228949.126, avg_D=0.056, hit_rate=0.332, energy_eff=3.416, epsilon=0.10, time=0.54s, steps/s=93.3
+Episode 1270/1500: avg_reward=-11817449.242, avg_energy=11817449.242, avg_D=0.054, hit_rate=0.333, energy_eff=3.176, epsilon=0.10, time=0.54s, steps/s=92.5
+Episode 1280/1500: avg_reward=-13802468.328, avg_energy=13802468.328, avg_D=0.054, hit_rate=0.339, energy_eff=3.017, epsilon=0.10, time=0.53s, steps/s=95.0
+Episode 1290/1500: avg_reward=-12454577.682, avg_energy=12454577.682, avg_D=0.054, hit_rate=0.332, energy_eff=2.938, epsilon=0.10, time=0.54s, steps/s=92.6
+Episode 1300/1500: avg_reward=-15215552.900, avg_energy=15215552.900, avg_D=0.053, hit_rate=0.264, energy_eff=2.775, epsilon=0.10, time=0.52s, steps/s=95.3
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.37GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 2
+0%
+====================
+
+Episode 1310/1500: avg_reward=-14432388.335, avg_energy=14432388.335, avg_D=0.055, hit_rate=0.266, energy_eff=2.944, epsilon=0.10, time=0.53s, steps/s=94.8
+Episode 1320/1500: avg_reward=-14545208.915, avg_energy=14545208.915, avg_D=0.055, hit_rate=0.257, energy_eff=2.621, epsilon=0.10, time=0.53s, steps/s=93.8
+Episode 1330/1500: avg_reward=-12798505.647, avg_energy=12798505.647, avg_D=0.054, hit_rate=0.262, energy_eff=2.891, epsilon=0.10, time=0.53s, steps/s=94.3
+Episode 1340/1500: avg_reward=-13588911.048, avg_energy=13588911.048, avg_D=0.056, hit_rate=0.265, energy_eff=2.651, epsilon=0.10, time=0.53s, steps/s=93.7
+Episode 1350/1500: avg_reward=-12007196.855, avg_energy=12007196.855, avg_D=0.055, hit_rate=0.258, energy_eff=2.984, epsilon=0.10, time=0.54s, steps/s=92.8
+Episode 1360/1500: avg_reward=-12800087.089, avg_energy=12800087.089, avg_D=0.055, hit_rate=0.243, energy_eff=2.972, epsilon=0.10, time=0.53s, steps/s=95.0
+Episode 1370/1500: avg_reward=-11588363.762, avg_energy=11588363.762, avg_D=0.055, hit_rate=0.281, energy_eff=3.051, epsilon=0.10, time=0.54s, steps/s=93.4
+Episode 1380/1500: avg_reward=-14170786.974, avg_energy=14170786.974, avg_D=0.056, hit_rate=0.269, energy_eff=2.688, epsilon=0.10, time=0.56s, steps/s=89.5
+Episode 1390/1500: avg_reward=-13303198.863, avg_energy=13303198.863, avg_D=0.057, hit_rate=0.248, energy_eff=2.805, epsilon=0.10, time=0.54s, steps/s=92.6
+Episode 1400/1500: avg_reward=-16198976.195, avg_energy=16198976.195, avg_D=0.057, hit_rate=0.228, energy_eff=2.411, epsilon=0.10, time=0.53s, steps/s=93.9
+
+=== 资源使用情况 ===
+CPU使用率: 0.0%, 内存使用: 4.38GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 7
+0%
+====================
+
+Episode 1410/1500: avg_reward=-13517349.597, avg_energy=13517349.597, avg_D=0.057, hit_rate=0.242, energy_eff=2.644, epsilon=0.10, time=0.54s, steps/s=92.6
+Episode 1420/1500: avg_reward=-15729549.319, avg_energy=15729549.319, avg_D=0.056, hit_rate=0.245, energy_eff=2.531, epsilon=0.10, time=0.53s, steps/s=93.9
+Episode 1430/1500: avg_reward=-20194188.863, avg_energy=20194188.863, avg_D=0.053, hit_rate=0.230, energy_eff=1.895, epsilon=0.10, time=0.52s, steps/s=96.6
+Episode 1440/1500: avg_reward=-15353560.756, avg_energy=15353560.756, avg_D=0.055, hit_rate=0.238, energy_eff=2.322, epsilon=0.10, time=0.54s, steps/s=93.2
+Episode 1450/1500: avg_reward=-15124680.949, avg_energy=15124680.949, avg_D=0.057, hit_rate=0.287, energy_eff=2.589, epsilon=0.10, time=0.53s, steps/s=95.0
+Episode 1460/1500: avg_reward=-13555985.550, avg_energy=13555985.550, avg_D=0.056, hit_rate=0.260, energy_eff=2.717, epsilon=0.10, time=0.54s, steps/s=93.3
+Episode 1470/1500: avg_reward=-17969933.156, avg_energy=17969933.156, avg_D=0.053, hit_rate=0.277, energy_eff=2.267, epsilon=0.10, time=0.52s, steps/s=97.0
+Episode 1480/1500: avg_reward=-17620380.383, avg_energy=17620380.383, avg_D=0.054, hit_rate=0.266, energy_eff=2.293, epsilon=0.10, time=0.52s, steps/s=95.6
+Episode 1490/1500: avg_reward=-12875839.284, avg_energy=12875839.284, avg_D=0.057, hit_rate=0.293, energy_eff=3.002, epsilon=0.10, time=0.54s, steps/s=93.3
+Episode 1500/1500: avg_reward=-13539494.829, avg_energy=13539494.829, avg_D=0.055, hit_rate=0.288, energy_eff=2.884, epsilon=0.10, time=0.53s, steps/s=93.8
+
+=== 资源使用情况 ===
+CPU使用率: 2.9%, 内存使用: 4.39GB/172.76GB (3.3%)
+GPU内存: 已分配 0.02GB, 已缓存 0.02GB, 利用率: 13
+0%
+====================
+
+
+=== 训练完成 ===
+总训练时间: 789.44 秒
+训练步数: 75000
+平均每秒步数: 95.00
+保存模型到: models/ddqn_Figure_7__Bandwidth_35_MHz_M3_N8_F10_K3_Cc10_Cr5_lr0.001_modefull_opt_20250416_002107.pth
+保存训练指标到: models/ddqn_Figure_7__Bandwidth_35_MHz_M3_N8_F10_K3_Cc10_Cr5_lr0.001_modefull_opt_20250416_002107_metrics.npz
