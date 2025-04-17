@@ -18,9 +18,16 @@ def extract_cache_capacity(filename):
 def extract_mode(filename):
     """从文件名中提取模式参数"""
     basename = os.path.basename(filename)
-    mode_match = re.search(r'mode([a-zA-Z_]+)', basename)
-    if mode_match:
-        return mode_match.group(1)
+    if "full" in basename:
+        return "full"
+    elif "random_all" in basename:
+        return "random_all"
+    elif "random_ua" in basename:
+        return "random_ua"
+    elif "random_rec" in basename:
+        return "random_rec"
+    elif "random_ca" in basename:
+        return "random_ca"
     return "unknown"
 
 def main():
@@ -78,8 +85,8 @@ def main():
     styles = {
         "full": ("red", "x-"),
         "random_ca": ("green", "s-"),
-        "random_rec": ("blue", "o-"),
         "random_ua": ("cyan", "^-"),
+        "random_rec": ("blue", "o-"),
         "random_all": ("magenta", "*-")
     }
     
@@ -99,7 +106,7 @@ def main():
     
     # 设置图例和保存
     plt.legend(loc='best')
-    output_dir = "cache_capacity_plots"
+    output_dir = "figures"
     os.makedirs(output_dir, exist_ok=True)
     plt.savefig(os.path.join(output_dir, "fig4_cache_capacity_comparison.png"), dpi=300, bbox_inches='tight')
     print(f"图表已保存至 {output_dir}/fig4_cache_capacity_comparison.png")
